@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BulkInsert.ClassLibrary.DAO;
-public class ProductDAO
+public class ProductDAL
 {
     private static string _connectionString = "Server=.;Database=TilbudsAvisData;Integrated Security=true;TrustServerCertificate=True";
     public static void BulkInsert(List<Product> products)

@@ -22,7 +22,7 @@ public class Tests
     {
         var products = ProductGenerator.GenerateRandomProducts(1_000_000);
         var now = DateTime.Now;
-        ProductDAO.BulkInsertAndSetIds(products);
+        ProductDAL.BulkInsertAndSetIds(products);
         var elapsed = DateTime.Now - now;
         Console.WriteLine(  elapsed.Seconds);
         Assert.IsTrue(elapsed.TotalSeconds < 10);
